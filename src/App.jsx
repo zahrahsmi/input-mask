@@ -16,9 +16,6 @@ function App() {
     setHint(matchinghint);
   }, [inputValue]);
 
-  console.log(inputValue);
-  console.log(hint);
-
   return (
     <div className="bg">
       <Input handleChange={handleChange} inputValue={inputValue} hint={hint} />

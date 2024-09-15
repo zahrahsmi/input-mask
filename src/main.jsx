@@ -2,13 +2,12 @@
 const Input = ({ handleChange, inputValue, hint }) => {
   return (
     <div className="input">
-      <label htmlFor="input">{inputValue && hint}</label>
+      <label htmlFor="input">{inputValue ? hint : "enter a city"}</label>
       <input
         type="text"
         id="input"
         value={inputValue}
         onChange={handleChange}
-        placeholder="enter a city"
       />
     </div>
   );
